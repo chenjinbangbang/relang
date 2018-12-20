@@ -1,0 +1,23 @@
+<scroll-view class='detail'>
+  <view class='detail-home'>
+    <view class='company'>{{detail.goodsname}}</view>
+    <view class='title'>{{detail.shopname}}</view>
+
+    <!-- <view class='verify_code'>{{detail.shop.vfcode}}</view> -->
+
+    <form class='form' bindsubmit="formSubmit">
+      <view class='section'>
+        <view class='section__title'>消费门店</view>
+        <view>{{detail.shop.name}}</view>
+      </view>
+      <view class='section'>
+        <view class='section__title'>验证码</view>
+        <input name="code" placeholder="询问店员或由店员输入"></input>
+      </view>
+      <view class='btn-area'>
+        <button formType="submit">确认使用</button>
+      </view>
+    </form>
+
+  </view>
+</scroll-view>

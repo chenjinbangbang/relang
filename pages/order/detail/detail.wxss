@@ -1,0 +1,183 @@
+/* .goods {
+  position: relative;
+  background-color: white;
+  padding: 10px;
+}
+
+.goods .img {
+  float: left;
+  margin-right: 8px;
+}
+
+.goods .img image {
+  width: 160rpx;
+}
+
+.goods .body {
+  overflow: hidden;
+}
+
+.goods .body .name {
+  font-size: 16px;
+}
+
+.goods .body .shop {
+  font-size: 13px;
+  color: #888;
+  border-top: 1rpx solid #c8c7cc;
+  margin-top: 6px;
+  line-height: 24px;
+}
+
+.goods .body .time {
+  font-size: 13px;
+  color: #888;
+  line-height: 16px;
+}
+
+.goods .item.use .name, .goods .item.over .name {
+  color: #999;
+}
+
+.goods .item.use .status, .goods .item.over .status {
+  color: #fff;
+  background-color: rgb(170, 169, 169);
+}
+
+.pay-content {
+  text-align: center;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+.pay-content .btn-pay {
+  margin-left: 15px;
+}
+
+.shop-content {
+  padding: 6px 0 6px 10px;
+  margin-bottom: 10px;
+}
+
+.shop-opt {
+  float: right;
+}
+
+.shop-opt icon {
+  font-size: 22px;
+  color: #479de6;
+  padding: 4px 14px;
+  border-left: 1rpx solid #c8c7cc;
+}
+
+.shop-info {
+  overflow: hidden;
+}
+
+.shop-info .name {
+  display: block;
+  font-size: 14px;
+  color: #555;
+}
+
+.shop-info .address {
+  display: block;
+  font-size: 12px;
+  color: #888;
+}
+
+.code-img {
+  width: 50%;
+  padding: 10px;
+  float: right;
+}
+
+.code-img image {
+  width: 100%;
+}
+
+.code-info {
+  overflow: hidden;
+} */
+
+.detail {
+  height: 100%;
+  background-color: #fdb02f;
+  padding-top: 100rpx;
+}
+
+.detail-home {
+  width: 95%;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 80rpx 30rpx 30rpx 30rpx;
+  background-color: #fff;
+  text-align: center;
+  border-radius:10rpx;
+}
+
+.company {
+  color: #999;
+  font-size: 34rpx;
+}
+
+.title {
+  margin: 20rpx 0;
+  font-size: 58rpx;
+}
+
+.order{
+  width:80%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin:auto;
+  display:flex;
+}
+
+.order view{
+  flex:1;
+  margin:0 10rpx;
+  border-radius:10rpx;
+}
+
+.cancel-order{
+  border:1rpx solid #ccc;
+  background-color:#f5f5f5;
+}
+
+.pay{
+  background-color: #fdb02f; 
+  color: #fff;
+  
+}
+
+.btn {
+  display:inline-block;
+  width: 60%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 30rpx auto 0 auto;
+  background-color: #fdb02f; 
+  color: #fff;
+  border-radius:10rpx;
+}
+
+.btn text{ display:block;}
+
+.used{
+  color:#fdb02f;
+}
+
+
+
+.time { 
+  width:450rpx;
+  font-size: 32rpx;
+  margin:40rpx auto 0 auto;
+  text-align:left;
+}
+
+.detail_img {
+  margin-top:60rpx;
+  width: 100%;
+}

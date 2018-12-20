@@ -1,0 +1,89 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wx80fad0f783b4ff9b",
+	"projectname": "relanghumeng",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "orderdetail",
+					"pathName": "pages/order/detail/detail",
+					"query": "id=56"
+				},
+				{
+					"id": 1,
+					"name": "orderverify",
+					"pathName": "pages/order/verify/verify",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "goods",
+					"pathName": "pages/goods/goods",
+					"query": "goodsId=3"
+				},
+				{
+					"id": -1,
+					"name": "list",
+					"pathName": "pages/order/list/list",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "map",
+					"pathName": "pages/map/map",
+					"query": "latitude=22.262385&longitude=113.581883"
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "orderverify",
+					"pathName": "pages/pay/pay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pay",
+					"pathName": "pages/pay/pay",
+					"query": ""
+				}
+			]
+		}
+	}
+}

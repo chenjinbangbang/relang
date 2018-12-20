@@ -1,0 +1,14 @@
+
+<view class='pay'>
+  <view class="tip">支付金额</view>
+  <view class='money'>￥{{orderPlaceData.total}}</view>
+
+  <view class="user">
+    <text>支付订单</text>
+    <text class="mui-ellipsis">{{orderPlaceData.paytitle}}</text>
+  </view>
+
+  <button class='btn' type='primary' bindtap='pay'>立即支付</button>
+
+</view>
+

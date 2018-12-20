@@ -1,0 +1,62 @@
+/* pages/ordert/ordert.wxss */
+
+.order-item {
+  background-color: white;
+  padding: 6px 10px;
+  margin: 10px 0;
+}
+
+.order-item-status {
+  float: right;
+  font-size: 14px;
+  margin-top: 3px;
+  margin-left: 8px;
+}
+
+.order-item-status.nopay {
+  color: red;
+}
+
+.order-item-status.use, .order-item-status.finish {
+  color: #00bfff;
+}
+
+.order-item-status.over {
+  color: #c9cabb;
+}
+
+.order-item-name {
+  overflow: hidden;
+  color: black;
+}
+
+.order-item-goods {
+  overflow: hidden;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.order-item-img {
+  width: 240rpx;
+  float: left;
+  margin-right: 10px;
+}
+
+.order-item-text {
+  overflow: hidden;
+}
+
+.order-item-text text {
+  display: block;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.order-item-bottom {
+  padding-top: 2px;
+}
+
+.order-item-bottom text {
+  display: block;
+  font-size: 14px;
+}

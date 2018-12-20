@@ -1,0 +1,47 @@
+<import src="/pages/common/prompt.wxml" />
+
+<!-- <template is="prompt" data="{{prompt}}" /> -->
+
+  <!-- <view class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{search}}" bindinput='searchInput' bindconfirm="searchGoods" />
+      <view class="weui-icon-clear" bindtap="searchClear">
+        <icon type="clear" size="14"></icon>
+      </view>
+    </view>
+  </view> -->
+
+  <view class='search-wrap'>
+    <wxc-search class="search" button="搜索" btn-color="#fff" bg-color="rgba(255, 255, 255, 0.18)" color="#fff" icon-color="#fff" ph-color="#fff" placeholder="搜索" bind:input="searchInput" bind:confirm="searchGoods" bind:clear="searchInput"></wxc-search>
+  </view>
+
+<scroll-view scroll-y class='scroll-view'>
+
+  <wxc-abnor class="abnor" type="SEARCH" wx:if="{{lists.length === 0}}"></wxc-abnor>
+
+  <view class='goods-list' wx:if="{{lists.length > 0}}">
+
+    <view class='mui-card item' wx:for="{{lists}}" wx:key="item.id">
+      <navigator url='/pages/goods/goods?goodsId={{item.id}}'>
+        <view class='top'>
+          <image mode='widthFix' src='{{item.mainimg || "/imgs/goods_empty.png"}}'></image>
+          <text class='time'>抢购时间：{{item.buystart}}~{{item.buyend}}</text>
+        </view>
+        
+        <view class='bottom'>
+          <text class='name'>{{item.name}}</text>
+          <view class='price-content'>
+            <view class="status {{item.buyclass}} ">{{item.buytext}}</view>
+            <view class='now-price'>
+              <text class='now-price-pre'>￥</text>
+              <text class='now-price'>{{item.price}}</text>
+              <text class='old-price-pre'>￥</text>
+              <text class='old-price'>{{item.oldprice}}</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</scroll-view>

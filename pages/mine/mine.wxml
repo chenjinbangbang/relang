@@ -1,0 +1,70 @@
+<scroll-view scroll-y>
+  <view class='userinfo' bindtap='userInfoTab'>
+    <view class='userinfo-avatar'>
+      <image mode='aspectFill' src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='info'>
+      <text class='name'>{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <!-- <view class="weui-cells order-cells">
+    <view class="weui-cell weui-cell_access" bindtap="toList" data-status="3">
+      <view class="weui-cell__bd">我的订单</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">全部订单</view>
+    </view>
+    <view class="weui-cell order-items">
+      <view class='order-item' bindtap="toList" data-status="0">
+        <icon class='iconfont icon-daifukuan'></icon>
+        <text>未付款</text>
+        <text wx:if="{{order.dzf>0}}" class='badge'>{{order.dzf}}</text>
+      </view>
+      <view class='order-item' bindtap="toList" data-status="1">
+        <icon class='iconfont icon-daifahuo'></icon>
+        <text>未使用</text>
+        <text wx:if="{{order.wsy>0}}" class='badge'>{{order.wsy}}</text>
+      </view>
+      <view class='order-item' bindtap="toList" data-status="2">
+        <icon class='iconfont icon-qiandao'></icon>
+        <text>已完成</text>
+      </view>
+    </view>
+  </view> -->
+
+  <!-- <view class="weui-cells icon-cells">
+    <navigator url="/pages/about/about" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <icon class='iconfont icon-account'></icon>
+      <view class="weui-cell__bd">关于我们</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+  </view> -->
+
+  <view class='list-wrap'>
+    <view class='list-item'>
+      <wxc-list title="我的订单" icon="feedback" desc="全部订单" bind:click="toList" data-status="3"></wxc-list>
+    </view> 
+
+    <view class="weui-cell order-items">
+      <view class='order-item' bindtap="toList" data-status="0">
+        <icon class='iconfont icon-daifukuan'></icon>
+        <text>未付款</text>
+        <text wx:if="{{order.dzf>0}}" class='badge'>{{order.dzf}}</text>
+      </view>
+      <view class='order-item' bindtap="toList" data-status="1">
+        <icon class='iconfont icon-daifahuo'></icon>
+        <text>未使用</text>
+        <text wx:if="{{order.wsy>0}}" class='badge'>{{order.wsy}}</text>
+      </view>
+      <view class='order-item' bindtap="toList" data-status="2">
+        <icon class='iconfont icon-qiandao'></icon>
+        <text>已完成</text>
+      </view>
+    </view>
+
+    <view class='list-item about'>
+      <wxc-list title="关于我们" icon="group"></wxc-list>
+    </view> 
+  </view>
+
+  <view class="logout" bindtap="btnTap">{{btnText}}</view>
+
+</scroll-view>

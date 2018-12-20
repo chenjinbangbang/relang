@@ -1,0 +1,20 @@
+<scroll-view scroll-y class='order-list'>
+  <view class='order-item'>
+    <view class='order-item-top'>
+      <view class='order-item-status over'> 交易成功</view>
+      <view class='order-item-name mui-ellipsis'>【必胜客】奥尔良9寸披萨33元券</view>
+    </view>
+    <view class='order-item-goods'>
+      <image mode='widthFix' class='order-item-img' src='/imgs/banner_1.jpg'></image>
+      <view class='order-item-text'>
+        <text class='order-item-num'>数量：</text>
+        <text class='order-item-price'>价格：</text>
+        <text class='order-item-tasktime'>下单时间：</text>
+      </view>
+    </view>
+    <view class='order-item-bottom border-top'>
+      <text class='order-time-usertime'>有效期：</text>
+      <text class='order-time-usertime'>兑换码：</text>
+    </view>
+  </view>
+</scroll-view>

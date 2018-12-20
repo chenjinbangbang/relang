@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "wxc-loading": "/dist/packages/@minui/wxc-loading/dist/index",
+    "wxc-input": "/dist/packages/@minui/wxc-input/dist/index",
+    "wxc-search": "/dist/packages/@minui/wxc-search/dist/index",
+    "wxc-abnor": "/dist/packages/@minui/wxc-abnor/dist/index"
+  }
+}

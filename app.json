@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/order/list/list",
+    "pages/mine/mine",
+    "pages/about/about",
+    "pages/order/detail/detail",
+    "pages/shop/map/map",
+    "pages/ordert/ordert",
+    "pages/goods/goods",
+    "pages/login/login",
+    "pages/order/verify/verify",
+    "pages/map/map",
+    "pages/pay/pay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fdb02f",
+    "navigationBarTitleText": "热浪虎门",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#efeff4"
+  },
+  "tabBar": { 
+    "color": "#E66A6A",
+    "selectedColor": "#fdb02f",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "imgs/home.png",
+        "selectedIconPath": "imgs/home_select.png"
+      },
+      {
+        "pagePath": "pages/order/list/list",
+        "text": "订单",
+        "iconPath": "imgs/order.png",
+        "selectedIconPath": "imgs/order_select.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "imgs/mine.png",
+        "selectedIconPath": "imgs/mine_select.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

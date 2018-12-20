@@ -1,0 +1,118 @@
+.weui-cell::before {
+  left: 0;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fdb02f;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 40rpx 30rpx;
+  border-radius: 50%;
+}
+
+.userinfo-avatar image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.userinfo .info .name {
+  color: #fff;
+}
+
+.list-wrap{ background-color:#fff; }
+
+.list-item{ }
+
+.about{  border-top:1px solid #ccc; }
+
+.order-cells {
+  margin-top: 0;
+  background-color: #fff;
+}
+
+.order-cells.weui-cells:after {
+  bottom: 0;
+  border-bottom: none;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.order-items:after {
+  border-bottom: none;
+  height: 0;
+}
+
+.order-item {
+  text-align: center;
+  padding: 15rpx 30rpx;
+  position: relative;
+}
+
+.order-item icon {
+  font-size: 32px;
+  display: block;
+}
+
+.order-item text {
+  display: block;
+  font-size: 14px;
+  margin-top: 5rpx;
+}
+
+.order-item .badge {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background: #f00;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 8px;
+}
+
+.logout {
+  position: relative;
+  margin-top: 1.17647059em;
+  line-height: 1.41176471;
+  font-size: 17px;
+  padding: 10px 15px;
+  background: #fff;
+  text-align: center;
+}
+
+.logout:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+}
+
+.logout:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1rpx solid #d9d9d9;
+  color: #d9d9d9;
+}

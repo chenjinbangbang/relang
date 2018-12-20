@@ -1,0 +1,5 @@
+
+<view class='prompt'>
+  <wxc-abnor type="{{imgType}}" title="{{title}}"></wxc-abnor>
+  {{imgType}}
+</view>

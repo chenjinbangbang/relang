@@ -1,0 +1,82 @@
+
+<!-- <view>
+
+  <slideTab tList="{{statusType}}" bind:changeCurrent="swichNav" currentTab="{{currentType}}">
+    <swiper current="{{currentType}}" duration="300" bindchange="bindChange" style="height: {{windowHeight-35}}px;margin-top:35px;">
+      <block>
+        <swiper-item wx:for="{{list}}" wx:key="item.id">
+          <view class="no-order" hidden="{{item.length ? true : false}}">
+            <image src="/imgs/no-order.png" class="no-order-img"></image>
+            <view class="text">暂无订单</view>
+          </view>
+
+          <scroll-view scroll-y="true" class="order-list" scroll-with-animation="true" lower-threshold="1" bindscrolltolower="scrolltolower" style="height: {{windowHeight-35}}px;" hidden="{{item ? flase : true}}">
+            <navigator class='order-item' url='/pages/order/detail/detail'>
+              <view class='order-item-top'>
+                <view class='order-item-status over'> 交易成功</view>
+                <view class='order-item-name mui-ellipsis'>【必胜客】奥尔良9寸披萨33元券</view>
+              </view>
+              <view class='order-item-goods'>
+                <image mode='widthFix' class='order-item-img' src='/imgs/banner_1.jpg'></image>
+                <view class='order-item-text'>
+                  <text class='order-item-num'>数量：</text>
+                  <text class='order-item-price'>价格：</text>
+                  <text class='order-item-tasktime'>下单时间：</text>
+                </view>
+              </view>
+              <view class='order-item-bottom border-top'>
+                <text class='order-time-usertime'>有效期：</text>
+                <text class='order-time-usertime'>兑换码：</text>
+              </view>
+            </navigator>
+          </scroll-view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </slideTab>
+</view> -->
+
+<view>
+  <view class="statusType">
+    <view wx:for="{{statusType}}" wx:key="{{item.status}}" data-status="{{item.status}}" bindtap="changeStatus" class="{{statusIndex == item.status ? 'active' : ''}}" >
+      {{item.name}}
+    </view>
+  </view>
+
+  <view>
+    <!-- <view class="no-order" wx:if="{{lists.length === 0}}">
+      <image src="/imgs/no-order.png" class="no-order-img"></image>
+      <view class="text">暂无订单</view>
+    </view> -->
+
+    <wxc-abnor class="abnor" type="ORDER" wx:if="{{lists.length === 0}}"></wxc-abnor>
+
+    <view class="order-list" wx:else>
+      <view wx:for="{{lists}}" wx:key="{{item.id}}">
+        <navigator class='order-item' url='/pages/order/detail/detail?id={{item.id}}'>
+          <view class='order-item-top'>
+            <view class='order-item-status {{item.status === 0 ? "noPay" : item.status === 2 ? "success" : "over"}}'>
+              {{item.status === 0 ? '未付款' : item.status === 1 ? '未使用' : item.status === 2 ? '交易成功' : item.status === 3 ? '交易关闭' : '已过期'}}
+            </view>
+            <view class='order-item-name mui-ellipsis'>{{item.goodsname}}</view>
+          </view>
+          <view class='order-item-goods'>
+            <image mode='widthFix' class='order-item-img' src='/imgs/banner_1.jpg'></image>
+            <view class='order-item-text'>
+              <text class='order-item-num'>数量：{{item.num}}</text>
+              <text class='order-item-price'>价格：{{item.total}}</text>
+              <text class='order-item-tasktime'>下单时间：{{item.createtime}}</text>
+            </view>
+          </view>
+          <view class='order-item-bottom border-top'>
+            <text class='order-time-usertime'>有效期：{{item.useendtime}}</text>
+            <!-- <text class='order-time-usertime'>兑换码：{{item.vfcode}}</text> -->
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+    
+</view>
+

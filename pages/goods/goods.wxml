@@ -1,0 +1,51 @@
+<view class='page'>
+  <scroll-view scroll-y class='goods-detail'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="weui-panel goods">
+      <view class="weui-panel__hd">
+        <text class='name'>{{goods.name}}</text>
+        <view class='price-content'>
+          <text class='pre'>￥</text>
+          <text class='price'>{{goods.price}}</text>
+          <text class='last-num'>剩余：{{goods.stock}}份</text>
+        </view>
+      </view>
+      <view class="weui-panel__bd">
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__desc">抢购时间：{{ goods.buystarttime }}</view>
+        </view>
+        <view class="weui-media-box weui-media-box_text">
+          <view class="weui-media-box__desc">有效期：{{ goods.usestarttime }}</view>
+        </view>
+      </view>
+    </view>
+    <view class="weui-panel shop-content">
+      <view class='shop-opt'>
+        <icon bindtap='openPhone' class='iconfont icon-dianhua'></icon>
+        <icon bindtap='openMap' class='iconfont icon-map'></icon>
+      </view>
+      <view class='shop-info'>
+        <text class='name'>{{goods.shopname}}</text>
+        <text class='address'>{{goods.shop.address}}</text>
+      </view>
+    </view>
+    <view class="weui-panel">
+      <view class="weui-panel__hd">商品详情</view>
+      <view class="weui-panel__bd">
+        <view class='weui-media-box'>
+          <import src="/wxParse/wxParse.wxml"></import>
+          <template is="wxParse" data="{{wxParseData: detail.nodes}}"></template>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="nav">
+    <button type="warn" class='btn-submit' bindtap="pay">开始抢购</button>
+  </view>
+</view>

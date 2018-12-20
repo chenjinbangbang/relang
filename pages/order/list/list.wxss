@@ -1,0 +1,156 @@
+.container {
+  width: 100%;
+  background-color: #efeff4;
+}
+
+.statusType {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80rpx;
+  position:relative;
+  z-index:1;
+  background-color:#fff;
+  font-size: 30rpx;
+  border-bottom:1rpx solid #eee;
+}
+
+.statusType view {
+  height:80rpx;
+  line-height:80rpx;
+  padding:0 20rpx;
+}
+
+.statusType view.active {
+  color: #fdb02f;
+  border-bottom: 4rpx solid #fdb02f;
+}
+
+.status-box {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.status-box .status-label {
+  width: 150rpx;
+  height: 100%;
+  text-align: center;
+  color: #353535;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.status-box .status-label.active {
+  color: #e64340;
+  border-bottom: 6rpx solid #e64340;
+}
+
+.status-box .status-label .red-dot {
+  width: 16rpx;
+  height: 16rpx;
+  position: absolute;
+  left: 116rpx;
+  top: 23rpx;
+  background-color: #f43530;
+  border-radius: 50%;
+}
+
+.no-order {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 100rpx;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 203rpx;
+  background-color: #efeff4;
+}
+
+.no-order-img {
+  width: 81rpx;
+  height: 96rpx;
+  margin-bottom: 31rpx;
+}
+
+.no-order .text {
+  font-size: 28rpx;
+  color: #999;
+  text-align: center;
+}
+
+.order-list {
+  width: 100%;
+  color:#666;
+  font-size:28rpx;
+}
+
+.order-item {
+  background-color: white;
+  padding: 6px 10px;
+  margin: 8px 0;
+}
+
+.order-item-status {
+  float: right;
+  margin-top: 3rpx;
+  margin-left: 8px;
+}
+
+.order-item-status.nopay {
+  color: red;
+}
+
+.order-item-status.use, .order-item-status.finish {
+  color: #00bfff;
+}
+
+.order-item-status.over {
+  color: #c9cabb;
+}
+.order-item-status.success {
+  color: #00bfff;
+}
+.order-item-status.noPay {
+  color: #f00;
+}
+
+
+.order-item-name {
+  overflow: hidden;
+  color:#000;
+}
+
+.order-item-goods {
+  overflow: hidden;
+  margin: 20rpx 0;
+}
+
+.order-item-img {
+  width: 200rpx;
+  float: left;
+  margin-right: 10px;
+  /* border-radius:50%; */
+}
+
+.order-item-text {
+  overflow: hidden;
+}
+
+.order-item-text text {
+  display: block;
+  margin-top: 1rpx;
+}
+
+.order-item-bottom {
+  padding-top: 2px;
+}
+
+.order-item-bottom text {
+  display: block;
+}

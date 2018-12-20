@@ -1,0 +1,5 @@
+
+.prompt{
+  text-align:center;
+  font-size:30rpx;
+}
